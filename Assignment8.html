@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms with Select and Radio Buttons</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            max-width: 500px;
+            margin: 5% 20% 5% 20%;
+            padding: 5%;
+            border-radius: 10px;
+            box-shadow: 0px 2px 3px 0px grey;
+            background-color: rgb(186, 232, 240);
+        }
+        h2{
+            color: rgb(0, 69, 118);
+            margin-bottom: 50px;
+            text-align: center;
+            font-weight: bold;
+        }
+        label{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        input[type=text]{
+            width: 80%;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0px 2px 3px 0px grey;
+        }
+        select{
+            width: 40%;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0px 2px 3px 0px grey;
+        }
+        button{
+            background-color: rgb(9, 218, 218);
+            text-align: center;
+            margin: 0 auto;
+            padding: 10px;
+            border: none;
+            display: block;
+            color: aliceblue;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="submit.html" method="post">
+        <h2>Form</h2>
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name">
+    <br><br>
+    <label for="gender">Gender:</label>
+    <input type="radio" name="Male" id="Male">Male
+    <input type="radio" name="Female" id="Female">Female
+    <br><br>
+    <label for="country">Country:</label>
+    <select name="country" id="country" required>
+       <option value="India">India</option>
+       <option value="China">China</option>
+    </select>
+    <br><br>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>

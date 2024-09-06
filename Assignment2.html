@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <style>
+        body{
+          margin: 0;
+        }
+        form{
+            background-color: #C8ACD6;
+            color:#433D8B   ;
+            border-radius: 8px;
+            max-width: 500px;
+            margin: 5% auto;
+            padding:60px;
+        }
+        form h3{
+            font-size:30px ;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        label{
+            padding: 10px;
+        }
+        input[type="text"],input[type="email"],input[type="password"]{
+            width: 100%;
+            padding: 10px;  
+            border: none;
+            border-radius: 10px;
+        }
+        button{
+            background-color:#433D8B   ;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            color: aliceblue;
+        }
+        button:hover{
+            background-color: #c8acd6c8;
+        }
+        
+    </style>
+</head>
+<body>
+   <form action="submit.html" method="POST">
+    <h3>Login</h3>
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required><br><br>
+    
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" required><br><br>
+
+    <input type="checkbox">I agree to terms and conditions</input><br><br>
+    <button type="submit"> Submit</button>
+   </form> 
+</body>
+</html>
